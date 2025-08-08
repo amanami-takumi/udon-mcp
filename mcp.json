@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "firecrawl-udonsharp": {
+      "command": "任意のディレクトリ\\venv\\Scripts\\python.exe",
+      "args": [
+        "任意のディレクトリ\\udon_mcp.py"
+      ],
+      "env": {
+        "FIRECRAWL_API_URL": "http://あなたのドメイン",
+        "FIRECRAWL_API_KEY": "あなたのトークン（fc-で始まるもの）"
+      }
+    }
+  },
+  "inputs": [
+    { "id": "firecrawl_api_key", "type": "promptString", "description": "Firecrawl API Key", "password": true }
+  ]
+}
